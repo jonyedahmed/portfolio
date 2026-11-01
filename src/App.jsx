@@ -142,7 +142,7 @@ function Home() {
 
       <Section id="about-me" kicker="A little about me" title="Hi, I'm Jonayed.">
         <div className="home-about">
-          <img className="home-about-photo" src={PHOTO} alt="Jonayed Ahmed, SEO Expert in Dhaka" width="260" height="260" loading="lazy" />
+          <img className="home-about-photo" src="/profile-large.jpg" alt="Jonayed Ahmed, SEO Expert in Dhaka" width="440" height="440" loading="lazy" />
           <div className="home-about-text">
             <p>I'm an SEO Expert based in Dhaka, with about two years of experience working on e-commerce websites. Most of my work has been for computer hardware and electronics stores built on OpenCart, helping their pages show up for the things people actually search for.</p>
             <p>Day to day, that means researching keywords and competitors, writing category and product content, fixing technical issues and reporting what changed in Search Console. I also build small React tools to speed up my own content work.</p>

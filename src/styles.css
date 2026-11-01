@@ -27,13 +27,14 @@ a { color: inherit; }
 .main-nav .nav-contact.active { border-color: rgba(101,230,209,.55); color: var(--accent); }
 .section-heading h1 { margin: 0; font-size: clamp(2.2rem,4.5vw,3.65rem); line-height: 1.1; letter-spacing: -.06em; font-weight: 750; }
 .contact-panel h1 { font-size: clamp(2.5rem,5vw,4.5rem); line-height: 1.08; letter-spacing: -.06em; }
-.home-about { display: grid; grid-template-columns: 260px 1fr; gap: 52px; align-items: center; }
+.home-about { display: grid; grid-template-columns: 400px 1fr; gap: 56px; align-items: center; }
+@media (max-width: 900px) { .home-about { grid-template-columns: 320px 1fr; gap: 36px; } }
 .home-about-photo { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; border: 1px solid var(--line); border-radius: var(--radius); background: var(--panel); }
 .home-about-text p { max-width: 640px; margin: 0 0 16px; color: #c3ccdc; font-size: .98rem; line-height: 1.85; }
 .home-about-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
 @media (max-width: 680px) {
   .home-about { grid-template-columns: 1fr; gap: 24px; }
-  .home-about-photo { width: 170px; }
+  .home-about-photo { width: min(100%, 340px); }
 }
 .cert-title { margin: 0; font-size: 1.2rem; line-height: 1.3; letter-spacing: -.02em; }
 .main-nav { display: flex; align-items: center; gap: 30px; }
