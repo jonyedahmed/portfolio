@@ -58,7 +58,7 @@ function Layout() {
         <div className="container nav-wrap">
           <Link to="/" className="brand" aria-label="Jonayed Ahmed, home">
             <img className="brand-photo" src={PHOTO} alt="" width="36" height="36" />
-            <span>JONAYED<span className="brand-dot">.</span></span>
+            <span>JONAYED AHMED</span>
           </Link>
           <nav className="main-nav" aria-label="Main navigation">
             {NAV_ITEMS.map((item) => (
@@ -79,7 +79,7 @@ function Layout() {
 
       <footer className="site-footer">
         <div className="container footer-inner">
-          <Link to="/" className="footer-brand">JONAYED<span>.</span></Link>
+          <Link to="/" className="footer-brand">JONAYED AHMED</Link>
           <p suppressHydrationWarning>© {new Date().getFullYear()} {PROFILE.name}. Built with purpose.</p>
         </div>
       </footer>
