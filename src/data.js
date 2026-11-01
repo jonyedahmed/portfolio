@@ -13,8 +13,8 @@ export const PROFILE = {
 
 export const CONTACT = {
   email: "",
-  linkedin: "https://www.linkedin.com/in/m-jonayed-ahmed/",
-  whatsapp: "",
+  linkedin: "",
+  whatsapp: "https://wa.me/8801882066560",
   github: "",
 };
 
