@@ -139,7 +139,7 @@ function Home() {
         </div>
       </section>
 
-      <Section id="about-me" kicker="A little about me" title="Hi, I'm Jonayed.">
+      <Section id="about-me" kicker="A little about me" title="Hi, I'm Jonayed Ahmed.">
         <div className="home-about">
           <img className="home-about-photo" src="/profile-large.jpg" alt="Jonayed Ahmed, SEO Expert in Dhaka" width="440" height="440" loading="lazy" />
           <div className="home-about-text">
