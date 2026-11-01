@@ -81,7 +81,6 @@ function Layout() {
         <div className="container footer-inner">
           <Link to="/" className="footer-brand">JONAYED<span>.</span></Link>
           <p suppressHydrationWarning>© {new Date().getFullYear()} {PROFILE.name}. Built with purpose.</p>
-          <a href="#home">Back to top ↑</a>
         </div>
       </footer>
     </>
