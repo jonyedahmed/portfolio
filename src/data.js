@@ -14,7 +14,7 @@ export const PROFILE = {
 export const CONTACT = {
   email: "",
   linkedin: "",
-  whatsapp: "https://wa.me/8801882066560",
+  whatsapp: "8801712345678?text=Hello%20Jonayed",
   github: "",
 };
 
