@@ -67,8 +67,8 @@ export const EXPERIENCE = [
 export const WORK = [
   {
     tag: "CATEGORY SEO",
-title: "Category Page SEO",
-text: "Optimized e-commerce category pages through keyword research, SEO-friendly descriptions, search intent optimization, and on-page SEO improvements."    meta: "Creatus Computer",
+    title: "Category Page SEO",
+    text: "Optimized e-commerce category pages through keyword research, SEO-friendly descriptions, search intent optimization, and on-page SEO improvements."    meta: "Creatus Computer",
     deliverable: "Category content · On-page SEO",
     googleDriveUrl: "",
   },
