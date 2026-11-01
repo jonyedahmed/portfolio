@@ -143,17 +143,15 @@ export default function App() {
                   <p className="work-description">{item.text}</p>
                   <div className="work-footer">
                     <span>{item.deliverable || "SEO case study"}</span>
-                    {item.googleDriveUrl ? (
-                      <a className="text-link" href={item.googleDriveUrl} target="_blank" rel="noopener noreferrer">View case study <Arrow /></a>
-                    ) : (
-                      <span className="link-pending">Case study link to be added</span>
+                    {item.googleDriveUrl && (
+                      <a className="text-link" href={item.googleDriveUrl} target="_blank" rel="noopener noreferrer">{item.linkLabel || "View case study"} <Arrow /></a>
                     )}
                   </div>
                 </div>
               </article>
             ))}
           </div>
-          <p className="work-note"><span>↗</span> Project documents can be shared through Google Drive. Links will open in a new tab.</p>
+          <p className="work-note"><span>↗</span> Reports and project documents open in a new tab.</p>
         </Section>
 
         <Section id="experience" kicker="Career path" title="Experience & contribution">
@@ -188,7 +186,20 @@ export default function App() {
           <div className="certification-block">
             <div><p className="eyebrow">LEARNING & CERTIFICATIONS</p><h3>Always improving the craft.</h3></div>
             <div className="certification-list">
-              {CERTIFICATIONS.map((cert) => <div className="certification" key={cert.name}><span className="cert-check">✓</span><div><strong>{cert.name}</strong><small>{cert.issuer}</small></div></div>)}
+              {CERTIFICATIONS.map((cert) => {
+                const body = (
+                  <>
+                    <span className="cert-check">✓</span>
+                    <div><strong>{cert.name}</strong><small>{cert.issuer}</small></div>
+                    {cert.url && <span className="cert-view">Verify <Arrow /></span>}
+                  </>
+                );
+                return cert.url ? (
+                  <a className="certification certification-link" key={cert.name} href={cert.url} target="_blank" rel="noopener noreferrer" aria-label={`Verify ${cert.name}`}>{body}</a>
+                ) : (
+                  <div className="certification" key={cert.name}>{body}</div>
+                );
+              })}
             </div>
           </div>
         </Section>
@@ -227,7 +238,7 @@ export default function App() {
       <footer className="site-footer">
         <div className="container footer-inner">
           <a href="#home" className="footer-brand">JONAYED<span>.</span></a>
-          <p>© {new Date().getFullYear()} {PROFILE.name}. Built with purpose.</p>
+          <p suppressHydrationWarning>© {new Date().getFullYear()} {PROFILE.name}. Built with purpose.</p>
           <a href="#home">Back to top ↑</a>
         </div>
       </footer>

@@ -21,7 +21,7 @@ export const CONTACT = {
 export const STATS = [
   { value: "2+", label: "years in SEO & digital marketing" },
   { value: "3", label: "agency and in-house roles" },
-  { value: "3", label: "SEO certifications" },
+  { value: "4", label: "verified certifications" },
   { value: "4", label: "workflow tools built" },
 ];
 
@@ -91,11 +91,23 @@ export const WORK = [
   },
   {
     tag: "SEO REPORTING",
-    title: "Monthly SEO progress reports",
-    text: "Structured reporting on ranking movement, Search Console performance, internal-link improvements and duplicate metadata fixes.",
+    title: "Monthly SEO ranking reports",
+    text: "A month-by-month ranking report for Creatus Computer, from May to October 2026, used to track keyword movement and decide the next optimization steps.",
     meta: "Creatus Computer",
-    deliverable: "Performance reporting · Action tracking",
-    googleDriveUrl: "",
+    deliverable: "Ranking tracking · Monthly reporting",
+    googleDriveUrl:
+      "https://docs.google.com/spreadsheets/d/1xu53mTmGyfzu-BdEMOVM1-DxNF55xUWDOeeLztE2cNc/edit?usp=sharing",
+    linkLabel: "View ranking report",
+  },
+  {
+    tag: "PRODUCT CONTENT",
+    title: "Product upload tracker",
+    text: "A monthly log of products uploaded and optimized on the Creatus Computer store, kept from June to November 2026 so every listing can be traced and reviewed.",
+    meta: "Creatus Computer",
+    deliverable: "Product uploads · Catalog tracking",
+    googleDriveUrl:
+      "https://docs.google.com/spreadsheets/d/1dBV4w9wo3MIYipekTte3QeLqBfXDb6rBGFW9VUdAKKw/edit?usp=sharing",
+    linkLabel: "View upload tracker",
   },
 ];
 
@@ -114,7 +126,24 @@ export const TOOLS_BUILT = [
 ];
 
 export const CERTIFICATIONS = [
-  { name: "Google Ads Search Certification", issuer: "Google" },
-  { name: "AI Search Operating System", issuer: "Semrush Academy · Jul 2026" },
-  { name: "International SEO", issuer: "Semrush Academy · Jul 2026" },
+  {
+    name: "Google Analytics Certification",
+    issuer: "Google Skillshop · 2026",
+    url: "https://skillshop.credential.net/34239a55-1386-4409-bb71-099cfed3bc8d#acc.kROGoKqQ",
+  },
+  {
+    name: "Google Ads Search Certification",
+    issuer: "Google Skillshop",
+    url: "https://skillshop.credential.net/5c611a0a-346d-4508-8f17-2128060d1ffa#acc.d5zyflaX",
+  },
+  {
+    name: "International SEO",
+    issuer: "Semrush Academy · Jul 2026",
+    url: "https://static.semrush.com/academy/certificates/56ff061882/jonayed-ahmed_30.pdf",
+  },
+  {
+    name: "AI Search Operating System",
+    issuer: "Semrush Academy · Jul 2026",
+    url: "https://static.semrush.com/academy/certificates/b844bedeaa/jonayed-ahmed_37.pdf",
+  },
 ];
