@@ -67,9 +67,8 @@ export const EXPERIENCE = [
 export const WORK = [
   {
     tag: "CATEGORY SEO",
-    title: "Cougar Casing category page",
-    text: "A detailed category page covering 22 PC case models, developed around product information, search intent and a stronger content structure.",
-    meta: "Creatus Computer",
+title: "Category Page SEO",
+text: "Optimized e-commerce category pages through keyword research, SEO-friendly descriptions, search intent optimization, and on-page SEO improvements."    meta: "Creatus Computer",
     deliverable: "Category content · On-page SEO",
     googleDriveUrl: "",
   },
